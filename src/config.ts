@@ -18,16 +18,18 @@ export const provider = new ethers.providers.JsonRpcProvider(
 
 export const explorerURL = "https://polygonscan.com";
 
+type ERC20Map = { [erc20: string]: string };
+
 // Token pair the bot trading
 export const baseToken = erc20Address.USDC;
-export const tradingTokens = [
-  erc20Address.DAI,
-  erc20Address.WMATIC,
-  erc20Address.USDT,
-  erc20Address.WETH,
-];
+export const tradingTokens: ERC20Map = {
+  DAI: erc20Address.DAI,
+  WMATIC: erc20Address.WMATIC,
+  USDT: erc20Address.USDT,
+  WETH: erc20Address.WETH,
+};
 
-export const flashloanAddress = "<your-deployed-contract-address>";
+export const flashloanAddress = "0xe43A0003955f8745c77A2A987Afa316D6B9828B3";
 
 export const protocols =
   "POLYGON_SUSHISWAP,POLYGON_QUICKSWAP,POLYGON_APESWAP,POLYGON_JETSWAP,POLYGON_WAULTSWAP";

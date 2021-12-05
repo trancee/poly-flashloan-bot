@@ -4021,6 +4021,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"log-prefix@npm:0.1.1":
+  version: 0.1.1
+  resolution: "log-prefix@npm:0.1.1"
+  checksum: cd2fdbcd31520940b1294fde005322243c5d825882c82f9a734b3b81d94cd2c9b3cf063dfa62108db11b869c58bfa636b3ac4cd508f341dc203a8527251851f2
+  languageName: node
+  linkType: hard
+
 "log-symbols@npm:^4.1.0":
   version: 4.1.0
   resolution: "log-symbols@npm:4.1.0"
@@ -4028,6 +4035,15 @@ __metadata:
     chalk: ^4.1.0
     is-unicode-supported: ^0.1.0
   checksum: fce1497b3135a0198803f9f07464165e9eb83ed02ceb2273930a6f8a508951178d8cf4f0378e9d28300a2ed2bc49050995d2bd5f53ab716bb15ac84d58c6ef74
+  languageName: node
+  linkType: hard
+
+"log-timestamp@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "log-timestamp@npm:0.3.0"
+  dependencies:
+    log-prefix: 0.1.1
+  checksum: f685491d90d0958629a246e6003910f64a1b7e25273077376b4206c439a13cd32a047c8cc9da5b89c46c5a0320b689680dcc85cc87de849eb941d57cc66e429b
   languageName: node
   linkType: hard
 
@@ -5106,6 +5122,7 @@ resolve@^1.20.0:
     husky: ^7.0.0
     jest: ^27.0.6
     lint-staged: ^11.1.2
+    log-timestamp: ^0.3.0
     nodemon: ^2.0.12
     pinst: ^2.0.0
     prettier: 2.4.1

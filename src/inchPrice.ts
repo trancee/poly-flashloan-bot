@@ -126,16 +126,18 @@ export async function checkArbitrage(
 }
 
 const sendRequest = async (url: string) => {
+  // console.log("sendRequest", url);
   let response: any = await axios
     .get(url)
     .then((result) => {
       return result.data;
     })
     .catch((error) => {
-      if (error.response) {
-        console.log(error.response.status);
-      }
-      console.log("Error", error.message);
+      console.error(
+        error.response ? error.response.status : "",
+        error.message,
+        url
+      );
       return null;
     });
 
